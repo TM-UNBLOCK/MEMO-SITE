@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memo App</title>
+</head>
+<body>
+    <h1>Memo App</h1>
+    
+    <form id="memoForm">
+        <textarea id="memoText" placeholder="Enter your memo here"></textarea><br>
+        <button type="button" onclick="saveMemo()">Save Memo</button>
+    </form>
+
+    <h2>Your Memos</h2>
+    <ul id="memoList"></ul>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js"></script>
+
+    <!-- JavaScriptコードを次に記載 -->
+    <script src="app.js"></script>
+</body>
+</html>
